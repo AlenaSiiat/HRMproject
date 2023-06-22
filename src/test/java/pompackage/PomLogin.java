@@ -1,6 +1,7 @@
 package pompackage;
 
 import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import basePackage.BaseHRMClass;
@@ -9,7 +10,8 @@ public class PomLogin extends BaseHRMClass { //created inheritance in order to u
 //1.create object repository for particular page (login in our example)
 @FindBy(name="username") WebElement Username; //driver.findElement(By.=@FindBy
 @FindBy(name="password") WebElement Password;	
-@FindBy(css=".oxd-button oxd-button--medium oxd-button--main orangehrm-login-button") WebElement Loginbtn;	
+@FindBy(css="#app > div.orangehrm-login-layout > div > div.orangehrm-login-container > div > div.orangehrm-login-slot > div.orangehrm-login-form > form > div.oxd-form-actions.orangehrm-login-action > button") WebElement Loginbtn;	
+
 
 //2.initiate page elements
 //create constructor of PomLogin class

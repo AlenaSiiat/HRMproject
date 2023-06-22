@@ -57,7 +57,7 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TimeUtils.timepage)
 driver.get(prop.getProperty("url"));//we want to read properties of config.properties file, so we use prop.
 }
 
-public static void screenshots(String Filename) {
+public static void screenshots(String Filename)  {
 	
 	File file=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	try {
